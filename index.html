@@ -1,4 +1,70 @@
-<h1> Hello world </h1>
-# h1
-## h2
-### h3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="dictionary.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <meta charset="UTF-8">
+    <title>hangman helper</title>
+</head>
+<body>
+    <div id="nav">
+        <div id="restart-button" class="button">R</div>
+    </div>
+
+    <div id="word-length-container">
+        <div class="title">Сколько букв в слове?</div>
+        <div id="word-length-buttons">
+            <ul class="row-buttons">
+                <li class="button word-length-button">4</li>
+                <li class="button word-length-button">5</li>
+                <li class="button word-length-button">6</li>
+                <li class="button word-length-button">7</li>
+                <li class="button word-length-button">8</li>
+                <li class="button word-length-button">9</li>
+            </ul>
+            <ul class="row-buttons">
+                <li class="button word-length-button">10</li>
+                <li class="button word-length-button">11</li>
+                <li class="button word-length-button">12</li>
+                <li class="button word-length-button">13</li>
+                <li class="button word-length-button">14</li>
+                <li class="button word-length-button">15</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="letter-check-container" style="display: none">
+        <div class="title">На каком месте стоит буква <span id="current-letter">А</span>?</div>
+        <div id="word-repr">
+        </div>
+        <div id="current-letter-options">
+            <div class="button" id="no-such-letter">такой нет</div>
+            <div class="button" id="next-letter">готово</div>
+        </div>
+        <div id="current-information">
+            <div id="used-letters">Использованные буквы: <span id="letters-list"></span></div>
+                <div id="probable-letters"> Возможные буквы:
+                    <ul id="letter-probabilities">
+
+                        <li>а - 0.5 (10/20)</li>
+                        <li>б - 0.3 (10/30)</li>
+                        <li>а - 0.1 (9/99)</li>
+                    </ul>
+                </div>
+            <div id="word-examples">
+                Примеры слов:
+                <ul id="word-examples-list">
+                    <li>бугульма</li>
+                    <li>бугульма</li>
+                    <li>бугульма</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

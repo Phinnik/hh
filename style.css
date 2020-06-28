@@ -1,0 +1,121 @@
+body {
+    background-color: #d7f2ba;
+    font-family: Arial, serif;
+    font-size: 60px;
+    color: #4c543a;
+}
+
+#nav {
+    position: absolute;
+    right: 100px;
+    top: 45%;
+}
+
+#restart-button {
+    width: 55px;
+    height: 55px;
+    font-size: 30px;
+    line-height: 55px;
+}
+
+.title {
+    margin-top: 180px;
+    text-align: center;
+}
+
+.button {
+    border: 3px solid #96b38b;
+    background-color: #bde4a8;
+    border-radius: 2px;
+    horiz-align: center;
+    box-shadow: -3px 3px 3px rgba(0,0,0, 0.5);
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.word-length-button {
+    margin: 0 13px 0 13px;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    font-size: 40px;
+}
+
+#word-length-buttons {
+    margin-top: 100px;
+    user-select: none;
+}
+
+
+.row-buttons {
+    text-align: center;
+    margin: 0 0 26px 0;
+}
+
+#word-repr {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.letter-place {
+    height: 70px;
+    width: 80px;
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.underscore {
+    background-color: #79b4a9;
+    height: 10px;
+    width: 80px;
+}
+
+.word-letter {
+    color: #428308;
+}
+
+.position-hint {
+    color: #b2c89a;
+}
+
+#current-letter-options {
+    margin-top: 30px;
+    text-align: center;
+}
+#current-letter-options .button {
+    line-height: 40px;
+    padding: 10px;
+    height: 40px;
+    font-size: 40px;
+    display: inline-block;
+}
+
+#current-information {
+    margin-top: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#word-examples, #probable-letters {
+    display: inline-block;
+    text-align: left;
+    margin: 0 40px 0 40px;
+    vertical-align: top;
+}
+
+.button:hover {
+    background-color: #caebb1;
+}
+.button:active {
+    background-color: #9cc69b;
+}
+
+.no-such-letter-unclickable {
+    background-color: #c1d4b7;
+}
